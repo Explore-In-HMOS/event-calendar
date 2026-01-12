@@ -23,8 +23,8 @@ export default struct SmartCalendarPicker {
       primaryTitle: 'Select Year',
       contentBuilder: () => {
         this.buildContent();
-      },
-    }),
+      }
+    })
   });
 
   aboutToAppear(): void {
@@ -60,7 +60,7 @@ export default struct SmartCalendarPicker {
         },
         onClose: () => {
           this.dialogController.close();
-        },
+        }
       })
     }
   }
@@ -81,16 +81,13 @@ export default struct SmartCalendarPicker {
             top: 0,
             right: 0,
             bottom: monthDay.hasEvents ? 4 : 0,
-            left: 0,
+            left: 0
           })
           .borderColor(Color.Orange)
           .textAlign(TextAlign.Center)
       }
       .padding(2)
     }
-    .onClick(() => {
-
-    })
   }
 
   async computedDays(date: Date): Promise<MonthDay[]> {
@@ -133,13 +130,13 @@ export default struct SmartCalendarPicker {
                   .fontColor(index === WEEK_DAYS.length - 1 || index === 0 ? Color.Red : Color.White)
               }
             },
-            (day: string) => day
+            (day: string, index: number) => day
           )
 
           LazyForEach(
             this.days,
             (monthDay: MonthDay) => this.monthDayBuilder(monthDay),
-            (monthDay: MonthDay, index: number) => `${monthDay}${index}`
+            (monthDay: MonthDay, index: number) => `${monthDay}`
           )
         }
         .columnsTemplate('1fr 1fr 1fr 1fr 1fr 1fr 1fr')
@@ -152,7 +149,7 @@ export default struct SmartCalendarPicker {
     }
     .padding({
       left: this.context.getWindowWidthBreakpoint() / 4.5,
-      top: 0,
+      top: 0
     })
     .justifyContent(FlexAlign.Center)
     .alignItems(HorizontalAlign.Center)

@@ -5,7 +5,7 @@
 **Event Calendar**  is a convenient app for users who want to view their personal calendar
 and events on their smartwatch. It works by synchronizing with device calendar through Calendar Kit.
 
-## Preview
+# Preview
 <div>
   <img src='screenshots/img1.png' width='24%' />
   <img src='screenshots/img2.png' width='24%' />
@@ -13,13 +13,14 @@ and events on their smartwatch. It works by synchronizing with device calendar t
   <img src='screenshots/img4.png' width='24%' />
 </div>
 
-## Use Cases
+# Use Cases
 
 - Show events on the watch
 - Can add events
 - Manage calendar on the watch
 
-## Tech Stack
+# Technology
+## Stack
 - **Languages**: ArkTS, ArkUI
 - **Frameworks**: HarmonyOS 5.0.39 Beta2 SDK
 - **Tools**: DevEco Studio 6.0.0 Beta2
@@ -34,7 +35,7 @@ and events on their smartwatch. It works by synchronizing with device calendar t
 - `ohos.permission.WRITE_CALENDAR`
 - `ohos.permission.READ_CALENDAR`
 
-## Directory Structure
+# Directory Structure
 
 ```
 entry/src/main/ets/
@@ -78,10 +79,10 @@ entry/src/main/ets/
 └─── 
 ```
 
-## Constraints and Restrictions
+# Constraints and Restrictions
 ## Supported Device
 - Huawei Watch 5
 
-## LICENSE
-**EventCalendar** is distributed under the terms of the MIT License.
-See the [license](LICENSE) for more information. 
+# License
+**Event Calendar** is distributed under the terms of the MIT License.
+See the [license](LICENSE) for more information.

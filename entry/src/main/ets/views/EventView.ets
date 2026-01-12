@@ -42,7 +42,7 @@ export default struct EventView {
       }
       .width('100%')
       .height('100%')
-      .background($r('app.color.app_background'))
+      .backgroundColor($r('app.color.app_background'))
     }
     .onBackPressed(() => {
       this.pathStack.pop();

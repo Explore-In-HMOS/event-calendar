@@ -24,7 +24,7 @@ struct Index {
       }
       .width('100%')
       .height('100%')
-      .background($r('app.color.app_background'))
+      .backgroundColor($r('app.color.app_background'))
     }
     .hideTitleBar(true)
   }
